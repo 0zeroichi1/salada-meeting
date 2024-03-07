@@ -44,6 +44,17 @@ header{
   transition: .3s;
 }
 
+/* 768px以下になった時に反映 */
+@media only screen and (max-width: 768px){
+  header .container{
+    justify-content: center;
+  }
+  .header_menu li{
+    /* 上 右 下 左 */
+    margin: 20px 16px 0;
+  }
+}
+
 /* main */
 #hero{
   background-image: url(../images/hero.jpg);
@@ -82,6 +93,19 @@ header{
   font-size: 32px;
   font-weight: 700;
   margin-bottom: 30px;
+}
+
+/* 768px以下になった時に反映 */
+@media only screen and (max-width: 768px){
+  #hero{
+    height: 460px;
+  }
+  .hero_inner p{
+    font-size: 15px;
+  }
+  .hero_inner h1{
+    font-size: 17px;
+  }
 }
 
 /* concept */
@@ -125,6 +149,24 @@ header{
   z-index: -1;
 }
 
+/* 768px以下になった時に反映 */
+@media only screen and (max-width: 768px){
+  #concept h3{
+    font-size: 24px;
+    line-height: 1.5;
+  }
+  .column-2{
+    width: 100%;
+  }
+  .text{
+    font-size: 15px;
+    line-height: 1.7;
+  }
+  .concept-img{
+    margin-top: 30px;
+  }
+}
+
 /* Service */
 #service{
   margin-bottom: 120px;
@@ -145,4 +187,98 @@ header{
   font-size: 24px;
   font-weight: 700;
   margin-bottom: 24px;
+}
+
+/* 768px以下になった時に反映 */
+@media only screen and (max-width: 768px){
+  .column-40{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .column-55{
+    width: 100%;
+  }
+  #service h3{
+    font-size: 17px;
+  }
+}
+
+/* company */
+#company{
+  margin-bottom: 120px;
+}
+#company dl{
+  max-width: 900px;
+  margin-left: auto;
+}
+#company dt{
+  width: 30%;
+  padding: 48px 0;
+  font-weight: 500;
+  border-bottom: solid 1px #D2ECBA;
+}
+#company dd{
+  width: 70%;
+  padding: 48px 0;
+  border-bottom: solid 1px #D2ECBA;
+}
+
+/* 768px以下になった時に反映 */
+@media only screen and (max-width: 768px){
+  #company dl{
+    font-size: 13px;
+  }
+}
+
+/* bottom */
+.column-a{
+background-image: url(../images/bottom1.jpg);;
+background-position: center;
+background-size: cover;
+width: 24%;
+height: 270px;
+border-radius: 20px;
+}
+.column-b{
+background-image: url(../images/bottom2.jpg);;
+background-position: center;
+background-size: cover;
+width: 18%;
+height: 270px;
+border-radius: 20px;
+}
+.column-c{
+background-image: url(../images/bottom3.jpg);;
+background-position: center;
+background-size: cover;
+width: 24%;
+height: 270px;
+border-radius: 20px;
+}
+.column-d{
+background-image: url(../images/bottom4.jpg);;
+background-position: center;
+background-size: cover;
+width: 28%;
+height: 270px;
+border-radius: 20px;
+}
+
+/* 768px以下になった時に反映 */
+@media only screen and (max-width: 768px){
+  .column-a, .column-b, .column-c, .column-d{
+    width: 48%;
+    height: 140px;
+    margin: 1%;
+  }
+}
+
+/* footer */
+footer{
+  text-align: center;
+  margin: 90px 0;
+}
+.copyright{
+  font-size: 12px;
+  margin-top: 40px;
 }
